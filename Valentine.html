@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day! 💖</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff6a6a, #ffb6c1);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-family: "Poppins", serif;
+            font-weight: 500;
+            font-style: normal;
+            font-size: 3.5em;
+            margin-top: 0;
+            padding: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: #ff4d8f;
+            transform: rotate(-45deg);
+            margin: 20px auto;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #ff4d8f;
+            border-radius: 50%;
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+
+        .message {
+            font-family: "Amatic SC", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.5em;
+            color: #fff;
+            padding: 15px;
+            margin: 20px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #ff3366;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ff4d8f;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 1em;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            position: relative;
+            padding-bottom: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Happy Valentine's Day! 💖</h1>
+        
+        <div class="heart"></div>
+        
+        <div class="message">
+            Valentine's Day is about love, happiness, and cherishing the people around us. Whether with a partner, family, friends, or yourself—spread love today! 🌹
+        </div>
+        
+        <button class="cta-button" onclick="showMessage()">Celebrate Love</button>
+    </div>
+
+    <footer>
+        Created with ❤️ by siddhesh
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Love is the greatest gift. Happy Valentine's Day! 💘");
+        }
+    </script>
+
+</body>
+</html>
